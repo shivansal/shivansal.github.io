@@ -16,7 +16,7 @@
 <body class="center-align">
   <div id="gradient" class="valign-wrapper"/>
   <div class="valign" id="inner">
-    <h6 id="text" >S H I V A N S A L</h6>
+    <h6 id="text" onclick="changeText(this)">S H I V A N S A L</h6>
     <hr id="line">
 
     <div class="col s6">
@@ -34,7 +34,17 @@
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/main.js"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+  <script>
+    var x=0;
+    function changeText(id){
+      x++;
+      if(x%2!=0)
+        id.innerHTML = "8.1.16";
+      else{
+        id.innerHTML = "S H I V A N S A L";
+      }
+    }
+  </script>
   </body>
 </html>
