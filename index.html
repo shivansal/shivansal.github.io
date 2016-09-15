@@ -1,51 +1,90 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
   <title>Shiv Ansal</title>
+  <style>
+    #image{
+      width: 200px;
+    }
+    #name{
+      font-weight: normal;
+      color: #2c3e50;
+    }
+    .fact{
+      font-weight: lighter;
+      font-size: 22px;
+      color: #2c3e50;
+    }
+    .icon{
+      padding: 10px;
+      color: #2c3e50;
+    }
+    #name:hover {
+    color: #f39c12;
+  }
+    #bait:hover{
+      color: #1abc9c;
+    }
+    #github:hover{
+      color: #e74c3c;
+    }
+    #linkedin:hover{
+      color: #2980b9;
+    }
+    #resume:hover{
+      color: #2ecc71;
+    }
+    #dribbble:hover{
+      color: #9b59b6;
+    }
+  </style>
 
   <!-- CSS  -->
-
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link rel="shortcut icon" type="image/png" href="icons/favicon.png"/>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
 </head>
-<body class="center-align">
-  <div id="gradient" class="valign-wrapper"/>
-  <div class="valign" id="inner">
-    <h6 id="text" onclick="changeText(this)">S H I V A N S A L</h6>
-    <hr id="line">
+<body onclick= "intro()">
+  <center>
+  <div class="valign">
+    <br>  <br>
+    <br>
+    <br>  <br>  <br>
+      <br>
 
-    <div class="col s6">
-        <h1 id="text2">Something <br>Amazing is on <br>its Way.</h1>
-    </div>
+  <img id="image"class="circle responsive-img" src="pic.jpg">
 
-    <h4 id="text">Developer. Designer. Entrepreneur.</h4>
-    <a href="https://www.linkedin.com/in/shivansal"><i class="fa sqicon fa-linkedin"></i></a>
-    <a href="https://www.github.com/shivansal"><i class="fa sqicon fa-github"></i></a>
-    <a href="https://dribbble.com/shivansal"><i class="fa sqicon fa-dribbble"></i></a>
-    <a href="resume.pdf"><i class="fa sqicon fa-file-pdf-o"></i></a>
-  </div>
-  <div>
 
+  <h4 id="name">Shiv Ansal</h4>
+  <h5 class="fact" id="bait">Computer Scientist and Aspiring Entreprenuer</h5>
+  <a  href="https://www.linkedin.com/in/shivansal"><i id="linkedin" class=" small fa sqicon fa-linkedin icon"></i></a>
+  <a  href="https://www.github.com/shivansal"><i id="github" class="small fa sqicon fa-github icon"></i></a>
+  <a  href="https://shivansal.carbonmade.com"><i id="dribbble"class="small fa sqicon fa-dribbble icon"></i></a>
+  <a  href="resume.pdf"><i id="resume" class="small fa sqicon fa-file-pdf-o icon"></i></a>
+</div>
+
+
+</center>
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
-  <script src="js/main.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+  <script src="js/init.js"></script>
   <script>
-    var x=0;
-    function changeText(id){
-      x++;
-      if(x%2!=0)
-        id.innerHTML = "8.1.16";
-      else{
-        id.innerHTML = "S H I V A N S A L";
-      }
+  var x;
+
+    function intro(){
+      Materialize.toast('Oh hey there! You are awesome for visiting!', 4000,'',function(){ Materialize.toast('I am in high school and my name is Shiv!', 7000)} )
+      Materialize.toast('Not much going on with this website!', 4000,'',function(){ Materialize.toast('I like simplicity as seen is in my website! We should get in touch!', 7000)} )
+
+    //  Materialize.toast('You know what they say! Simplicity is key!', 8000)
+
+
     }
   </script>
+
   </body>
 </html>
