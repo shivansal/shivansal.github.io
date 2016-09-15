@@ -39,6 +39,14 @@
     #dribbble:hover{
       color: #9b59b6;
     }
+    #about{
+      color: #bdbdbd;
+    }
+    #abouttext{
+      font-weight: lighter;
+      padding: 5px;
+      padding-left: 20px;
+    }
   </style>
 
   <!-- CSS  -->
@@ -53,8 +61,7 @@
   <div class="valign">
     <br>  <br>
     <br>
-    <br>  <br>  <br>
-      <br>
+    <br>
 
   <img id="image"class="circle responsive-img" src="pic.jpg">
 
@@ -65,21 +72,44 @@
   <a  href="https://www.github.com/shivansal"><i id="github" class="small fa sqicon fa-github icon"></i></a>
   <a  href="https://shivansal.carbonmade.com"><i id="dribbble"class="small fa sqicon fa-dribbble icon"></i></a>
   <a  href="resume.pdf"><i id="resume" class="small fa sqicon fa-file-pdf-o icon"></i></a>
+  <br>
+  <br>
+  <br>
+
+</center>
+
+  <ul id="slide-out" class="side-nav">
+    <li><div class="userView">
+      <img class="background" src="desk.jpg">
+      <a href="#!user"><img class="circle" src="pic.jpg"></a>
+      <a href="#!name"><span class="white-text name">Shiv Ansal</span></a>
+      <a href="#!email"><span class="white-text email">ansalshiv@gmail.com</span></a>
+    </div>
+  <p id="abouttext">  My name is <strong>Shiv Ansal</strong> and I am 16. I am currently coding this website and I am glad you have stumbled upon it. This about me section is a work in progress! Come back soon!</p>
+  <br>
+  <p id="abouttext"> I am listening to this while coding right now <i class="fa fa-smile-o" aria-hidden="true"></i>
+</p>
+<iframe src="https://embed.spotify.com/?uri=spotify%3Atrack%3A0UHJP01i0yukw7Mdbfq7GN" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+  </ul>
+  <center>
+  <a href="#" id="about" data-activates="slide-out" class="button-collapse">about me</a>
+</center>
 </div>
 
 
-</center>
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
   <script>
-  var x;
+  var x = 0;
 
     function intro(){
+      if(x==0){
       Materialize.toast('Oh hey there! You are awesome for visiting!', 4000,'',function(){ Materialize.toast('I am in high school and my name is Shiv!', 7000)} )
       Materialize.toast('Not much going on with this website!', 4000,'',function(){ Materialize.toast('I like simplicity as seen is in my website! We should get in touch!', 7000)} )
-
+    }
+      x++;
     //  Materialize.toast('You know what they say! Simplicity is key!', 8000)
 
 
