@@ -39,6 +39,24 @@
     #dribbble:hover{
       color: #9b59b6;
     }
+    #about{
+      color: #bdbdbd;
+    }
+    #abouttext{
+      font-weight: lighter;
+      padding: 5px;
+      padding-left: 20px;
+    }
+    .lol{
+      padding: 20px;
+    }
+    .makeblack{
+      color: black;
+    }
+
+    .words{
+      font-weight: lighter;
+    }
   </style>
 
   <!-- CSS  -->
@@ -49,41 +67,47 @@
 
 </head>
 <body onclick= "intro()">
-  <center>
-  <div class="valign">
+ 
+  <div class="valign lol">
     <br>  <br>
-    <br>
-    <br>  <br>  <br>
-      <br>
+    
 
-  <img id="image"class="circle responsive-img" src="pic.jpg">
+  <h4 id="name"><b>Shiv Ansal</b></h4>
+  <h5 class="fact" id="bait">Computer Scientist and Aspiring Entrepreneur</h5>
+  <a  href="https://www.linkedin.com/in/shivansal"><i id="linkedin" class="makeblack">LinkedIn</i></a>
+  <a  href="https://www.github.com/shivansal"><i id="github" class="makeblack">GitHub</i></a>
+  <a  href="https://shivansal.carbonmade.com"><i id="dribbble" class="makeblack">Design</i></a>
+  <a  href="resume.pdf"><i id="resume" class="makeblack">Resume</i></a>
+  <p class="words"> Hi, my name is Shiv Ansal. I am a Senior at Monta Vista High. I am passionate about <br>
+  computer science and artificial intellgience/machine learning. I am interested in helping <br> people 
+  with the art of computer science, one semi-colon at a time :D </p>
+
+  <p class="words">Email: <u>ansalshiv@gmail.com</u> \ Number: <u>1(408)816-4535</u> </p>
+  <br>
+
+  <p ><b>Experience</b> </p>
+  <p class = "words">
+  <u>Current</u><br>
+  Software Engineering/Machine Learning Intern @ UnShackled Venture Capatalists <br>
+  Research Intern @ Stanford University The School of Medicine: The Wall Lab <br>
+  Founder @ DeCode Education<br>
+  Co-President @ Silicon Valley Design-It<br>
+  </p>
+<br>
+<br>
+Last Updated: July 13 2017
 
 
-  <h4 id="name">Shiv Ansal</h4>
-  <h5 class="fact" id="bait">Computer Scientist and Aspiring Entreprenuer</h5>
-  <a  href="https://www.linkedin.com/in/shivansal"><i id="linkedin" class=" small fa sqicon fa-linkedin icon"></i></a>
-  <a  href="https://www.github.com/shivansal"><i id="github" class="small fa sqicon fa-github icon"></i></a>
-  <a  href="https://shivansal.carbonmade.com"><i id="dribbble"class="small fa sqicon fa-dribbble icon"></i></a>
-  <a  href="resume.pdf"><i id="resume" class="small fa sqicon fa-file-pdf-o icon"></i></a>
-</div>
+ 
 
 
-</center>
+
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
   <script>
-  var x;
 
-    function intro(){
-      Materialize.toast('Oh hey there! You are awesome for visiting!', 4000,'',function(){ Materialize.toast('I am in high school and my name is Shiv!', 7000)} )
-      Materialize.toast('Not much going on with this website!', 4000,'',function(){ Materialize.toast('I like simplicity as seen is in my website! We should get in touch!', 7000)} )
-
-    //  Materialize.toast('You know what they say! Simplicity is key!', 8000)
-
-
-    }
   </script>
 
   </body>
