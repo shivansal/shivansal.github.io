@@ -1,74 +1,103 @@
-<!DOCTYPE HTML>
-<!--
-	Story by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+<!DOCTYPE html>
 <html>
 	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Shiv Ansal</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="font-awesome.min.css">
+		<link rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
+		<script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+        <!-- <link rel="stylesheet" href="styles/debug.css"> -->
+		<style>
 
+.center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.is-paddingless-horizontal { padding-left: 0; padding-right: 0; }
+
+.grid {
+	display: grid;
+	grid-template-columns:
+		[xl-start] 1fr 1.5rem [md-start] minmax(0, 624px) [md-end] 1.5rem 1fr [xl-end];
+}
+
+.grid *  { grid-column: md; }
+.grid-xl { grid-column: xl; }
+
+		</style>
 	</head>
 	<body>
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="divided">
+		<!-- .section -->
+		<section class="section is-paddingless-horizontal">
+			<div class="container grid">
+				<nav class="breadcrumb" aria-label="breadcrumbs">
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li class="is-active"><a href="#" aria-current="page">About Me</a></li>
+					</ul>
+				</nav>
+			</div>
+		</section>
+		<!-- /.section -->
+		
+		<!-- .section -->
+		<section class="section is-paddingless-horizontal" style="padding-top: 0;">
+			<div class="container grid" style="max-width: 1024px;">
 
-				<!-- One -->
-					<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
+				<!-- .media -->
+				<article class="media center">
+					<figure class="media-left">
+						<span class="image is-64x64">
+							<img src="images/me.jpg">
+						</span>
+					</figure>
+					<div class="media-content">
 						<div class="content">
-							<h1>Shiv Ansal</h1>
-							<p class="major" id="reduce">Aspiring Scientist with a focus on Computer Science</p>
-							<p id="reduceless">I am fond of programming and have a huge interest in Artificial Intelligence. I currently focus on projects implementing Computer Vision and Machine Learning</p>
-							<div class="more">
-								<ul class="icons">
-									<li><a href="https://github.com/shivansal" class="icon style2 fa-github"><span class="label">Github</span></a></li>
-									<li><a href="https://shivansal.carbonmade.com/" class="icon style2 fa-dribbble"><span class="label">Dribbble</span></a></li>
-									<li><a href="https://www.linkedin.com/in/shivansal/" class="icon style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
-									<li><a href="Shiv_Ansal_Resume.pdf" target ="blank" class="icon style2 fa-file-pdf-o"><span class="label">Resume</span></a></li>
+							<p>
+								<strong>Shiv Ansal</strong> <a target="_blank" rel="noopener noreferrer" href="https://github.com/shivansal">@shivansal</a><br>
+								<span class="has-text-grey">Computer Science @ UMass Amherst<br>
+								<span class="has-text-grey"><a href = "./extras/Shiv Ansal Resume 2019.pdf">Resume</a> / <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/shivansal/">LinkedIn</a><br>
+							</p>
+						</div>
+					</div>
+				</article>
+				<!-- /.media -->
 
-								</ul>
-							</div>
-			
-						</div>
-						<div class="image">
-							<img src="images/banner.jpeg" alt="" />
-						</div>
-					</section>
-	
-				
-					</div>
-					</div>
-					</section>
+				<!-- .section -->
+				<div class="section is-paddingless-horizontal">
+					<p class="subtitle is-6 ">
+						I am currently an undegraduate student studying computer science at the University of Massachusetts Amherst (2021). I am interested in a variety of topics such as machine learning, operating systems, and algorithms. While studying, I also work part-time as a software engineer at the <a target="_blank" rel="noopener noreferrer" href="https://blogs.umass.edu/hydrosystems/"> Hydrosystems Research Group</a> on campus.	
+						<br><br>
+						I picked up programming when I was 15 years old and have fell in love with the craft ever since. Prior to working at the Hydrosystems Group, I joined the <a target="_blank" rel="noopener noreferrer" href="http://autismglass.stanford.edu">Autism Glass Project</a> as a research intern during the summer of 2017 where I got to explore the overlap between machine learning and behavioral therapy for kids with autism. I also served as software engineering intern at <a target="_blank" rel="noopener noreferrer" href="http://www.unshackledvc.com/index">Unshackled Ventures</a> during my senior year in high school.
+
+					</p>
 					
 
+					<!-- 
+					<h1 class="title is-5">
+						How to build a beautiful blog
+					</h1>
+					<h2 class="subtitle is-6 has-text-grey-light">
+						Learn from first-principles
+					</h2>
+				</div>
 				
-
-				<!-- Footer -->
-					<footer class="wrapper style1 align-center">
-						<div class="inner">
-						Let's Talk?
-							<ul class="icons">
-
-								<li>Email: ansalshiv@gmail.com</li>
-							</ul>
-							<p>&copy; Shiv Ansal. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-						</div>
-					</footer>
+				
+			
+				<figcaption class="level">
+					<small class="level-item has-text-grey">
+						The blog we'll build. Click to continue on Scrimba
+					</small>
+				</figcaption>
+				 /.columns -->
 
 			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+		</section>
+		<!-- /.section -->
 
 	</body>
 </html>
